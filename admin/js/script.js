@@ -29,6 +29,7 @@ function displayColumns(value){
 +'<button onclick="deleteRecord('+value.id+')" class="btn btn-danger">Exclude</button>'
 +'</td>';
 }
+
 function addRecord(){
     $('#id').val('');
     $('#name').val('');
@@ -39,6 +40,7 @@ function addRecord(){
     $('#myModalLabel').html('Add New Customer');
     $('#add_new_record_modal').modal('show');
 }
+
 function viewRecord(id){
     var url="/customers/"+id;
     
@@ -128,22 +130,3 @@ function createRecord(formData){
     };
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-
-
-
